@@ -105,7 +105,7 @@ def get_sentence(self):
 <br><br>
 <h3>5. show_results() method</h3>
 <p>The show_results() method is where we <b>calculate the speed</b> of the user’s typing. The time starts when the user clicks on the input box and when the user hits return key “Enter” then we perform the difference and calculate time in seconds.</p>
-<p>To calculate accuracy, we did a little bit of math. We counted the correct typed characters by comparing input text with the display text which the user had to type.</p><br>
+<p>To calculate accuracy, we did a little bit of math. We counted the correct typed characters by comparing input text with the display text which the user had to type.</p>
 <p>The formula for accuracy is:</p>
 <p><b>(correct characters)x100/ (total characters in sentence)</b></p>
 <p>The WPM is the words per minute. A typical word consists of around 5 characters, so we calculate the words per minute by dividing the total number of words with five and then the result is again divided that with the total time it took in minutes. Since our total time was in seconds, we had to convert it into minutes by dividing total time with 60.</p>
