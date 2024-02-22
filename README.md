@@ -14,7 +14,7 @@ To install the pygame library, type the following code in your terminal.<br>
 ```
 pip install pygame
 ```
-**Steps to Build the Python Project on Typing Speed Test**<br><br>
+<b>Steps to Build the Python Project on Typing Speed Test</b><br><br>
 
 _We created such file for our project_
 
@@ -80,7 +80,7 @@ class Game:
 <p>In this constructor, we have initialized the width and height of the window, variables that are needed for calculation and then we initialized the pygame and loaded the images. The screen variable is the most important on which we will draw everything</p><br>
 
 <h3>3. draw_text() method</h3>
-<p>The draw_text() method of Game class is a **helper function** that will draw the text on the screen. The argument it takes is the screen, the message we want to draw, the y coordinate of the screen to position our text, the size of the font and color of the font. We will draw everything in the center of the screen. After drawing anything on the screen, pygame requires you to update the screen.</p>
+<p>The draw_text() method of Game class is a <b>helper function</b> that will draw the text on the screen. The argument it takes is the screen, the message we want to draw, the y coordinate of the screen to position our text, the size of the font and color of the font. We will draw everything in the center of the screen. After drawing anything on the screen, pygame requires you to update the screen.</p>
 
 ```
 def draw_text(self, screen, msg, y ,fsize, color):
@@ -93,7 +93,7 @@ def draw_text(self, screen, msg, y ,fsize, color):
 
 <br><h3>4. get_sentence() method</h3>
 
-<p>Remember that we have a list of sentences in our sentences.txt file? The get_sentence() method will open up the file and **return a random sentence** from the list. We split the whole string with a newline character.</p><br>
+<p>Remember that we have a list of sentences in our sentences.txt file? The get_sentence() method will open up the file and <b>return a random sentence</b> from the list. We split the whole string with a newline character.</p><br>
 
 ```
 def get_sentence(self):
@@ -104,7 +104,7 @@ def get_sentence(self):
 ```
 <br><br>
 <h3>5. show_results() method</h3>
-<p>The show_results() method is where we **calculate the speed** of the user’s typing. The time starts when the user clicks on the input box and when the user hits return key “Enter” then we perform the difference and calculate time in seconds.</p>
+<p>The show_results() method is where we <b>calculate the speed</b> of the user’s typing. The time starts when the user clicks on the input box and when the user hits return key “Enter” then we perform the difference and calculate time in seconds.</p>
 <p>To calculate accuracy, we did a little bit of math. We counted the correct typed characters by comparing input text with the display text which the user had to type.</p><br>
 <p>The formula for accuracy is:</p>
 <p><b>(correct characters)x100/ (total characters in sentence)</b></p>
@@ -146,7 +146,7 @@ def show_results(self, screen):
 ```
 
 <br><h3>6. run() method</h3>
-<p>This is the main method of our class that will **handle all the events.** We call the reset_game() method at the starting of this method which resets all the variables. Next, we run an infinite loop which will capture all the mouse and keyboard events. Then, we draw the heading and the input box on the screen.</p>
+<p>This is the main method of our class that will <b>handle all the events.</b> We call the reset_game() method at the starting of this method which resets all the variables. Next, we run an infinite loop which will capture all the mouse and keyboard events. Then, we draw the heading and the input box on the screen.</p>
 <p>We then use another loop that will look for the mouse and keyboard events. When the mouse button is pressed, we check the position of the mouse if it is on the input box then we start the time and set the active to True. If it is on the reset button, then we reset the game.</p>
 <p>When the active is True and typing has not ended then we look for keyboard events. If the user presses any key then we need to update the message on our input box. The enter key will end typing and we will calculate the scores to display it. Another event of a backspace is used to trim the input text by removing the last character.</p><br>
 
@@ -204,7 +204,7 @@ def run(self):
 ```
 
 <br><h3>7. reset_game() method</h3>
-<p>The reset_game() method **resets all variables** so that we can start testing our typing speed again. We also select a random sentence by calling the get_sentence() method. In the end, we have closed the class definition and created the object of Game class to run the program.</p><br>
+<p>The reset_game() method <b>resets all variables</b> so that we can start testing our typing speed again. We also select a random sentence by calling the get_sentence() method. In the end, we have closed the class definition and created the object of Game class to run the program.</p><br>
 
 ```
 def reset_game(self):
