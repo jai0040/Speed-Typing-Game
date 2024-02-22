@@ -5,7 +5,7 @@
 <p>Have you played a typing speed game? It’s a very useful game to track your typing speed and improve it with regular practice. Now, you will be able to build your own typing speed game in Python by just following a few steps.</p>
 
 <h3>About the Python Project</h3><br>
-<p>In this Python project idea, we are going to build an exciting project through which you can **check** and even **improve** your typing speed. For a graphical user interface, we are going to use the pygame library which is used for working with graphics. We will draw the images and text to be displayed on the screen.</p>
+<p>In this Python project idea, we are going to build an exciting project through which you can <b>check</b> and even <b>improve</b> your typing speed. For a graphical user interface, we are going to use the pygame library which is used for working with graphics. We will draw the images and text to be displayed on the screen.</p>
 
 <h4>Prerequisites</h4>
 The project in Python requires you to have basic knowledge of python programming and the pygame library.<br>
